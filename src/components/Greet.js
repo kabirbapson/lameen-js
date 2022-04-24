@@ -1,9 +1,17 @@
+
 import React from "react";
 
-const Greet = () => {
-    return <div>
-        <h1>Hello Abu Lameen</h1>
-        <p>Am here</p>
-    </div>
+const Greet = (props) => {
+
+    return (
+        <div>
+            <h1> Hello {props.name} AKA {props.name} AKA {props.hname}</h1>
+
+            {props.children}
+            {/* {geto.children} */}
+            {/* <p>Am here</p> */}
+        </div>
+    )
 }
 export default Greet;
+
