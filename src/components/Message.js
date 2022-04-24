@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 class Message extends Component {
 
-
     constructor() {
         super()
         this.state = {
@@ -10,15 +9,11 @@ class Message extends Component {
             message2: 'Thank you for joining in'
         }
     }
-
     changeMessage() {
         this.setState({
             message: 'Thanks for subscribing!'
         })
     }
-
-
-
     render() {
         return (
             <div>
